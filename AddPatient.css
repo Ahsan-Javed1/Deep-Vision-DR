@@ -1,0 +1,238 @@
+.form-container {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.form-title {
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.invalid-feedback {
+  display: block;
+  font-size: 0.875rem;
+}
+
+.is-invalid {
+  border-color: #dc3545;
+}
+
+.container-fluid {
+  padding: 1rem;
+}
+
+.title-sectionAdd {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.required-field::after {
+  content: "*";
+  color: #dc3545;
+  margin-left: 0.25rem;
+}
+
+.date-input-container {
+  position: relative;
+}
+
+.date-input-container .calendar-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #6c757d;
+}
+
+.auto-resize-textarea {
+  min-height: 100px;
+  overflow-y: hidden;
+}
+
+.validation-summary {
+  background-color: #f8d7da;
+  border-left: 4px solid #dc3545;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.375rem;
+}
+
+.validation-summary-title {
+  color: #842029;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.validation-summary-list {
+  margin: 0;
+  padding-left: 1.5rem;
+  color: #842029;
+}
+
+.validation-summary-list li {
+  margin-bottom: 0.25rem;
+}
+
+.clearform {
+  background-color: #595b5e;
+  border-radius: 5px;
+  /* border-color: #050505; */
+  color: white;
+}
+
+.clearform:hover {
+  background-color: #771010;
+  color: white;
+}
+.react-tel-input .country-list {
+  height: 300px;
+  width: 200px;
+  max-height: 300px;
+}
+.react-tel-input .country-list .search {
+  display: flex;
+}
+
+/* -------------------------------------------------------------------
+   1) FORCE THE WRAPPER TO BE 100% OF ITS PARENT (NO MIN‐WIDTH/OVERFLOW)
+   ------------------------------------------------------------------- */
+.react-tel-input {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  position: relative; /* so we can absolutely position the flag */
+  box-sizing: border-box;
+}
+
+/* -------------------------------------------------------------------
+   2) GIVE THE FLAG CONTAINER A FIXED WIDTH + ABSOLUTE POSITION
+   ------------------------------------------------------------------- */
+/* .selected-flag wraps the flag icon and caret arrow */
+.react-tel-input .selected-flag {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 50px !important; /* reserve 50px for flag+caret */
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  background-color: transparent !important;
+  border: none !important;
+  z-index: 2;
+}
+
+/* Shrink the arrow inside the flag container, if needed */
+.react-tel-input .selected-flag .arrow {
+  margin-left: 4px !important;
+  /* margin-top: 0 !important; */
+  /* width: 6px !important; */
+  /* height: 6px !important; */
+  /* border-width: 0 1px 1px 0 !important; */
+  /* transform: rotate(45deg) !important; */
+}
+
+/* -------------------------------------------------------------------
+   3) PAD THE INPUT RIGHT OF THE FLAG CONTAINER
+   ------------------------------------------------------------------- */
+/* .form-control is the actual text input where the number appears */
+.react-tel-input .form-control {
+  padding-left: 62px !important; /* 50px (flag width) + 12px breathing room */
+  padding-right: 12px !important; /* optional: small right padding */
+  width: 100% !important;
+  min-width: 0 !important;
+  box-sizing: border-box;
+  height: 38px !important;
+  font-size: 1rem !important;
+  border: 1px solid #ccc !important;
+  border-radius: 4px !important;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* Focus state (if you want the blue‐glow effect) */
+.react-tel-input .form-control:focus {
+  border-color: #80bdff !important;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25) !important;
+}
+
+/* -------------------------------------------------------------------
+   4) KEEP THE COUNTRY DROPDOWN RESPONSIVE
+   ------------------------------------------------------------------- */
+.react-tel-input .country-list {
+  max-height: 300px !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  width: 200px !important;
+  max-width: 90vw !important;
+  border: 1px solid #ddd !important;
+  border-radius: 6px !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15) !important;
+  background-color: #fff !important;
+  box-sizing: border-box;
+  padding: 0 !important;
+  position: absolute;
+  z-index: 1000;
+  margin-top: 40px;
+}
+
+/* Style each country option */
+.react-tel-input .country-list .country {
+  display: flex !important;
+  align-items: center !important;
+  padding: 6px 10px !important;
+  font-size: 0.9rem !important;
+  cursor: pointer !important;
+  transition: background-color 0.15s ease;
+  white-space: nowrap !important;
+}
+
+.react-tel-input .country-list .country:hover {
+  background-color: #f0f0f0 !important;
+}
+
+.react-tel-input .country-list .flag {
+  margin-right: 8px !important;
+
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2) !important;
+}
+
+.react-tel-input .country-list .country-name {
+  margin-right: auto !important;
+}
+.react-tel-input .country-list .dial-code {
+  color: #555 !important;
+  font-size: 0.85rem !important;
+}
+
+/* Custom scrollbar for WebKit */
+.react-tel-input .country-list::-webkit-scrollbar {
+  width: 6px !important;
+  background-color: transparent !important;
+}
+.react-tel-input .country-list::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  border-radius: 3px !important;
+}
+
+/* Firefox scrollbar */
+.react-tel-input .country-list {
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent !important;
+}
+
+/* -------------------------------------------------------------------
+   5) HIDE ANY PAGE‐WIDE HORIZONTAL SCROLL
+   ------------------------------------------------------------------- */
+html,
+body {
+  overflow-x: hidden !important;
+}
